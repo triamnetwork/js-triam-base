@@ -6,7 +6,7 @@ This is an implementation in JavaScript that can be used on either Node.js or we
 
 * **[API Reference](https://triamnetwork.github.io/js-triam-base/)**
 
-> **Warning!** Node version of this package is using [`ed25519`](https://www.npmjs.com/package/ed25519) package, a native implementation of [Ed25519](https://ed25519.cr.yp.to/) in Node.js, as an [optional dependency](https://docs.npmjs.com/files/package.json#optionaldependencies). This means that if for any reason installation of this package fails, `stellar-base` will fallback to the much slower implementation contained in [`tweetnacl`](https://www.npmjs.com/package/tweetnacl).
+> **Warning!** Node version of this package is using [`ed25519`](https://www.npmjs.com/package/ed25519) package, a native implementation of [Ed25519](https://ed25519.cr.yp.to/) in Node.js, as an [optional dependency](https://docs.npmjs.com/files/package.json#optionaldependencies). This means that if for any reason installation of this package fails, `triam-base` will fallback to the much slower implementation contained in [`tweetnacl`](https://www.npmjs.com/package/tweetnacl).
 >
 > If you are using `triam-base` in a browser you can ignore this. However, for production backend deployments you should definitely be using `ed25519`. If `ed25519` is successfully installed and working `TriamBase.FastSigning` variable will be equal `true`. Otherwise it will be `false`.
 
@@ -77,6 +77,3 @@ A new version will be published to npm **and** Bower by Travis CI.
 
 npm >=2.13.0 required.
 Read more about [npm version](https://docs.npmjs.com/cli/version).
-
-## License
-js-stellar-base is licensed under an Apache-2.0 license. See the [LICENSE](./LICENSE) file for details.

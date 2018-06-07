@@ -59,14 +59,14 @@ gulp.task('build:browser', ['lint:src'], function() {
         new webpack.IgnorePlugin(/ed25519/)
       ]
     }))
-    .pipe(plugins.rename('stellar-base.js'))
+    .pipe(plugins.rename('triam-base.js'))
     .pipe(gulp.dest('dist'))
     .pipe(plugins.uglify({
       output: {
         ascii_only: true
       }
     }))
-    .pipe(plugins.rename('stellar-base.min.js'))
+    .pipe(plugins.rename('triam-base.min.js'))
     .pipe(gulp.dest('dist'));
 });
 
